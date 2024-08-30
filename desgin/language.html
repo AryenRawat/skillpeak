@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Common stylesheet -->
+    <style>
+        /* Additional styles for centering */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: .5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .form-container .box {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        .form-container button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="language-form">
+            <h3>Select Your Preferred Language</h3>
+            <div class="box">
+                <label for="language" style="font-size: 1.8rem; color: var(--light-color);">Choose a language:</label>
+                <select name="language" id="language" class="box">
+                    <option value="english">English</option>
+                    <option value="hindi">हिन्दी</option>
+                    <option value="tamil">தமிழ்</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('language-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var language = document.getElementById('language').value;
+            if (language === 'hindi') {
+                window.location.href = 'playlist_hindi.html'; // Redirect to Hindi playlist
+            } else if (language === 'tamil') {
+                window.location.href = 'playlist_tamil.html'; // Redirect to Tamil playlist
+            } else {
+                window.location.href = 'playlist.html'; // Redirect to English playlist
+            }
+        });
+    </script>
+
+</body>
+</html>
