@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,264 +11,187 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-   <section class="flex">
-      <a href="home.html" class="logo" id="logo">SkillPeak</a>
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" id="searchPlaceholder">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
-      </div>
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
-         
-     </div>
+   <header class="header">
+      <section class="flex">
+         <a href="home.html" class="logo" id="logo">SkillPeak</a>
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search courses..." maxlength="100"
+               id="searchPlaceholder">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="User">
+            <h3 class="name" id="header-user-name">User</h3>
+            <p class="role" id="userRole">student</p>
+            <a href="profile.html" class="btn" id="viewProfile">view profile</a>
+            <div class="flex-btn">
+               <a href="logout.html" class="option-btn" id="logout">logout</a>
+            </div>
+         </div>
+      </section>
+   </header>
+
+   <div class="side-bar">
+      <div id="close-btn"><i class="fas fa-times"></i></div>
+
       <div class="profile">
          <img src="images/pic-1.jpg" class="image" alt="User">
-         <h3 class="name" id="header-user-name">User</h3>
-         <p class="role" id="userRole">student</p>
-         <a href="profile.html" class="btn" id="viewProfile">view profile</a>
-         <div class="flex-btn">
-            <a href="logout.html" class="option-btn" id="logout">logout</a>
-         </div>
+         <h3 class="name" id="sidebar-user-name">User</h3>
+         <p class="role" id="sidebarRole">student</p>
+         <a href="profile.html" class="btn" id="sidebarViewProfile">view profile</a>
       </div>
-   </section>
-</header>   
 
-<div class="side-bar">
-   <div id="close-btn"><i class="fas fa-times"></i></div>
-
-   <div class="profile">
-      <img src="images/pic-1.jpg" class="image" alt="User">
-      <h3 class="name" id="sidebar-user-name">User</h3>
-      <p class="role" id="sidebarRole">student</p>
-      <a href="profile.html" class="btn" id="sidebarViewProfile">view profile</a>
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span id="homeLink">home</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span id="aboutLink">about</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span id="coursesLink">courses</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span id="teachersLink">teachers</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span id="contactLink">contact us</span></a>
+      </nav>
    </div>
 
-   <nav class="navbar">
-      <a href="home.html"><i class="fas fa-home"></i><span id="homeLink">home</span></a>
-      <a href="about.html"><i class="fas fa-question"></i><span id="aboutLink">about</span></a>
-      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span id="coursesLink">courses</span></a>
-      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span id="teachersLink">teachers</span></a>
-      <a href="contact.html"><i class="fas fa-headset"></i><span id="contactLink">contact us</span></a>
-   </nav>
-</div>
+   <section class="playlist-details">
+      <h1 class="heading" id="playlistDetails">playlist details</h1>
 
-<section class="playlist-details">
-   <h1 class="heading" id="playlistDetails">playlist details</h1>
+      <div class="row">
+         <div class="column">
+            <form action="" method="post" class="save-playlist">
+               <button type="submit"><i class="far fa-bookmark"></i> <span id="savePlaylist">save
+                     playlist</span></button>
+            </form>
 
-   <div class="row">
-      <div class="column">
-         <form action="" method="post" class="save-playlist">
-            <button type="submit"><i class="far fa-bookmark"></i> <span id="savePlaylist">save playlist</span></button>
-         </form>
-
-         <div class="thumb">
-            <img src="images/thumb-1.png" alt="Playlist Thumbnail">
-            <span id="playlistThumbnail">10 videos</span>
-         </div>
-      </div>
-
-      <div class="column">
-         <div class="tutor">
-            <img src="images/pic-2.jpg" alt="Tutor">
-            <div>
-               <h3 id="tutorName">john deo</h3>
-               <span id="tutorDate">21-10-2022</span>
+            <div class="thumb">
+               <img src="images/thumb-1.png" alt="Playlist Thumbnail">
+               <span id="playlistThumbnail">10 videos</span>
             </div>
          </div>
 
-         <div class="details">
-            <h3 id="courseTitle">complete HTML tutorial</h3>
-            <p id="courseDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
-            <a href="teacher_profile.html" class="inline-btn" id="watchProfile">view profile</a>
+         <div class="column">
+            <div class="tutor">
+               <img src="images/pic-2.jpg" alt="Tutor">
+               <div>
+                  <h3 id="tutorName">john deo</h3>
+                  <span id="tutorDate">21-10-2022</span>
+               </div>
+            </div>
+
+            <div class="details">
+               <h3 id="courseTitle">complete HTML tutorial</h3>
+               <p id="courseDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus
+                  reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
+               <a href="teacher_profile.html" class="inline-btn" id="watchProfile">view profile</a>
+            </div>
          </div>
       </div>
-   </div>
-</section>
+   </section>
 
-<section class="playlist-videos">
-   <h1 class="heading" id="playlistVideos">playlist videos</h1>
+   <section class="playlist-videos">
+      <h1 class="heading" id="playlistVideos">playlist videos</h1>
 
-   <div class="box-container">
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-1.png" alt="">
-         <h3 id="videoPart1">complete HTML tutorial (part 01)</h3>
-      </a>
+      <div class="box-container">
+         <a class="box" href="watch-video.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-1.png" alt="">
+            <h3 id="videoPart1">complete HTML tutorial (part 01)</h3>
+         </a>
 
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-2.png" alt="">
-         <h3 id="videoPart2">complete HTML tutorial (part 02)</h3>
-      </a>
+         <a class="box" href="watch-video.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-2.png" alt="">
+            <h3 id="videoPart2">complete HTML tutorial (part 02)</h3>
+         </a>
 
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-3.png" alt="">
-         <h3 id="videoPart3">complete HTML tutorial (part 03)</h3>
-      </a>
-   </div>
-</section>
+         <a class="box" href="watch-video.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-3.png" alt="">
+            <h3 id="videoPart3">complete HTML tutorial (part 03)</h3>
+         </a>
+      </div>
+   </section>
 
-<footer class="footer">
-   <span id="footerText">&copy; copyright @ 2024 by <span>SkillPeak</span> | all rights reserved!</span>
-</footer>
+   <footer class="footer">
+      <span id="footerText">&copy; copyright @ 2024 by <span>SkillPeak</span> | all rights reserved!</span>
+   </footer>
 
-<!-- Custom JS -->
-<script src="js/script.js"></script>
+   <!-- Custom JS -->
+   <script src="js/script.js"></script>
 
-<script type="module">
-   const translations = {
-       en: {
-           logo: "SkillPeak",
-           searchPlaceholder: "search courses...",
-           userName: "User",
-           role: "student",
-           viewProfile: "view profile",
-           logout: "logout",
-           playlistDetails: "playlist details",
-           savePlaylist: "save playlist",
-           playlistThumbnail: "10 videos",
-           tutorName: "john deo",
-           date: "21-10-2022",
-           courseTitle: "complete HTML tutorial",
-           courseDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-           watchProfile: "view profile",
-           playlistVideos: "playlist videos",
-           videoPart: "complete HTML tutorial (part ",
-           footer: "&copy; copyright @ 2024 by SkillPeak | all rights reserved!"
-       },
-       hi: {
-           logo: "स्किलपीक",
-           searchPlaceholder: "कोर्स खोजें...",
-           userName: "उपयोगकर्ता",
-           role: "छात्र",
-           viewProfile: "प्रोफ़ाइल देखें",
-           logout: "लॉगआउट",
-           playlistDetails: "प्लेलिस्ट विवरण",
-           savePlaylist: "प्लेलिस्ट सहेजें",
-           playlistThumbnail: "10 वीडियो",
-           tutorName: "जॉन डियो",
-           date: "21-10-2022",
-           courseTitle: "पूर्ण एचटीएमएल ट्यूटोरियल",
-           courseDescription: "लोरम इप्सम डोलर सिट अमेट, कॉनसेक्टेटर अदिपिसिसिंग एलीट।",
-           watchProfile: "प्रोफ़ाइल देखें",
-           playlistVideos: "प्लेलिस्ट वीडियो",
-           videoPart: "पूर्ण एचटीएमएल ट्यूटोरियल (भाग ",
-           footer: "&copy; कॉपीराइट @ 2024 द्वारा स्किलपीक | सर्वाधिकार सुरक्षित!"
-       },
-       es: {
-           logo: "SkillPeak",
-           searchPlaceholder: "buscar cursos...",
-           userName: "Usuario",
-           role: "estudiante",
-           viewProfile: "ver perfil",
-           logout: "cerrar sesión",
-           playlistDetails: "detalles de la lista de reproducción",
-           savePlaylist: "guardar lista de reproducción",
-           playlistThumbnail: "10 videos",
-           tutorName: "john deo",
-           date: "21-10-2022",
-           courseTitle: "tutorial completo de HTML",
-           courseDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-           watchProfile: "ver perfil",
-           playlistVideos: "videos de la lista de reproducción",
-           videoPart: "tutorial completo de HTML (parte ",
-           footer: "&copy; copyright @ 2024 por SkillPeak | todos los derechos reservados!"
-       },
-       de: {
-           logo: "SkillPeak",
-           searchPlaceholder: "Kurse suchen...",
-           userName: "Benutzer",
-           role: "Student",
-           viewProfile: "Profil anzeigen",
-           logout: "abmelden",
-           playlistDetails: "Playlist-Details",
-           savePlaylist: "Playlist speichern",
-           playlistThumbnail: "10 Videos",
-           tutorName: "john deo",
-           date: "21-10-2022",
-           courseTitle: "vollständiges HTML-Tutorial",
-           courseDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-           watchProfile: "Profil anzeigen",
-           playlistVideos: "Playlist-Videos",
-           videoPart: "vollständiges HTML-Tutorial (Teil ",
-           footer: "&copy; copyright @ 2024 von SkillPeak | alle Rechte vorbehalten!"
-       },
-       fr: {
-           logo: "SkillPeak",
-           searchPlaceholder: "rechercher des cours...",
-           userName: "Utilisateur",
-           role: "étudiant",
-           viewProfile: "voir le profil",
-           logout: "déconnexion",
-           playlistDetails: "détails de la playlist",
-           savePlaylist: "enregistrer la playlist",
-           playlistThumbnail: "10 vidéos",
-           tutorName: "john deo",
-           date: "21-10-2022",
-           courseTitle: "tutoriel complet sur HTML",
-           courseDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-           watchProfile: "voir le profil",
-           playlistVideos: "vidéos de la playlist",
-           videoPart: "tutoriel complet sur HTML (partie ",
-           footer: "&copy; copyright @ 2024 par SkillPeak | tous droits réservés!"
-       }
-   };
+   <script type="module">
+      const translations = {
+         en: {
+            logo: "SkillPeak",
+            searchPlaceholder: "search courses...",
+            userName: "User",
+            role: "student",
+            viewProfile: "view profile",
+            logout: "logout",
+            playlistDetails: "playlist details",
+            savePlaylist: "save playlist",
+            playlistThumbnail: "10 videos",
+            tutorName: "john deo",
+            date: "21-10-2022",
+            courseTitle: "complete HTML tutorial",
+            courseDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            watchProfile: "view profile",
+            playlistVideos: "playlist videos",
+            videoPart: "complete HTML tutorial (part ",
+            footer: "&copy; copyright @ 2024 by SkillPeak | all rights reserved!"
+         },
+         hi: {
+            logo: "स्किलपीक",
+            searchPlaceholder: "कोर्स खोजें...",
+            userName: "उपयोगकर्ता",
+            role: "छात्र",
+            viewProfile: "प्रोफ़ाइल देखें",
+            logout: "लॉगआउट",
+            playlistDetails: "प्लेलिस्ट विवरण",
+            savePlaylist: "प्लेलिस्ट सहेजें",
+            playlistThumbnail: "10 वीडियो",
+            tutorName: "जॉन डियो",
+            date: "21-10-2022",
+            courseTitle: "पूर्ण एचटीएमएल ट्यूटोरियल",
+            courseDescription: "लोरम इप्सम डोलर सिट अमेट, कॉनसेक्टेटर अदिपिसिसिंग एलीट।",
+            watchProfile: "प्रोफ़ाइल देखें",
+            playlistVideos: "प्लेलिस्ट वीडियो",
+            videoPart: "पूर्ण एचटीएमएल ट्यूटोरियल (भाग ",
+            footer: "&copy; कॉपीराइट @ 2024 द्वारा स्किलपीक | सर्वाधिकार सुरक्षित!"
+         },
+         // Add translations for other languages similarly
+      };
 
-  // Function to change language
-  function changeLanguage(lang) {
-       const translation = translations[lang];
-       // Update all text elements based on selected language
-       document.getElementById('logo').textContent = translation.logo;
-       document.getElementById('searchPlaceholder').placeholder = translation.searchPlaceholder;
-       document.getElementById('header-user-name').textContent = translation.userName;
-       document.getElementById('userRole').textContent = translation.role;
-       document.getElementById('viewProfile').textContent = translation.viewProfile;
-       document.getElementById('logout').textContent = translation.logout;
-       document.getElementById('playlistDetails').textContent = translation.playlistDetails;
-       document.getElementById('savePlaylist').textContent = translation.savePlaylist;
-       document.getElementById('playlistThumbnail').textContent = translation.playlistThumbnail;
-       document.getElementById('tutorName').textContent = translation.tutorName;
-       document.getElementById('tutorDate').textContent = translation.date;
-       document.getElementById('courseTitle').textContent = translation.courseTitle;
-       document.getElementById('courseDescription').textContent = translation.courseDescription;
-       document.getElementById('watchProfile').textContent = translation.watchProfile;
-       document.getElementById('playlistVideos').textContent = translation.playlistVideos;
-       document.getElementById('videoPart1').textContent = translation.videoPart + "01)";
-       document.getElementById('videoPart2').textContent = translation.videoPart + "02)";
-       document.getElementById('videoPart3').textContent = translation.videoPart + "03)";
-       document.getElementById('footerText').innerHTML = translation.footer;
-   }
-    
-   // Get the saved language or default to English
-   const userLang = localStorage.getItem('language') || 'en';
-   changeLanguage(userLang);
-   console.log("Selected Language:", userLang);
+      const userLang = localStorage.getItem('language') || 'en';
+      document.getElementById('logo').textContent = translations[userLang].logo;
+      document.getElementById('searchPlaceholder').placeholder = translations[userLang].searchPlaceholder;
+      document.getElementById('header-user-name').textContent = translations[userLang].userName;
+      document.getElementById('userRole').textContent = translations[userLang].role;
+      document.getElementById('viewProfile').textContent = translations[userLang].viewProfile;
+      document.getElementById('logout').textContent = translations[userLang].logout;
+      document.getElementById('playlistDetails').textContent = translations[userLang].playlistDetails;
+      document.getElementById('savePlaylist').textContent = translations[userLang].savePlaylist;
+      document.getElementById('playlistThumbnail').textContent = translations[userLang].playlistThumbnail;
+      document.getElementById('tutorName').textContent = translations[userLang].tutorName;
+      document.getElementById('tutorDate').textContent = translations[userLang].date;
+      document.getElementById('courseTitle').textContent = translations[userLang].courseTitle;
+      document.getElementById('courseDescription').textContent = translations[userLang].courseDescription;
+      document.getElementById('watchProfile').textContent = translations[userLang].watchProfile;
+      document.getElementById('playlistVideos').textContent = translations[userLang].playlistVideos;
+      document.getElementById('footerText').innerHTML = translations[userLang].footer;
 
-   document.addEventListener('DOMContentLoaded', function() {
-   // Fetch the saved language or default to English
-   const userLang = localStorage.getItem('language') || 'en';
-   changeLanguage(userLang);
-   console.log("Selected Language:", userLang);
+      // Updating video titles
+      for (let i = 1; i <= 3; i++) {
+         document.querySelector(`#videoPart${i}`).textContent = translations[userLang].videoPart + i + ")";
+      }
 
-   // Fetch username from localStorage and display it
-   const userName = localStorage.getItem('username') || "User";
-   document.getElementById('header-user-name').textContent = userName;
-   document.getElementById('sidebar-user-name').textContent = userName;
-});
-</script>
-
+   </script>
 </body>
+
 </html>

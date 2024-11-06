@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>वीडियो प्लेलिस्ट</title>
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <header class="header">
+      <section class="flex">
+         <a href="home.html" class="logo" id="logo">स्किलपीक</a>
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="कोर्स खोजें..." maxlength="100" id="searchPlaceholder">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="User">
+            <h3 class="name" id="header-user-name">उपयोगकर्ता</h3>
+            <p class="role" id="userRole">छात्र</p>
+            <a href="profile.html" class="btn" id="viewProfile">प्रोफ़ाइल देखें</a>
+            <div class="flex-btn">
+               <a href="logout.html" class="option-btn" id="logout">लॉगआउट</a>
+            </div>
+         </div>
+      </section>
+   </header>
+
+   <div class="side-bar">
+      <div id="close-btn"><i class="fas fa-times"></i></div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="User">
+         <h3 class="name" id="sidebar-user-name">उपयोगकर्ता</h3>
+         <p class="role" id="sidebarRole">छात्र</p>
+         <a href="profile.html" class="btn" id="sidebarViewProfile">प्रोफ़ाइल देखें</a>
+      </div>
+
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span id="homeLink">मुख्य</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span id="aboutLink">के बारे में</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span id="coursesLink">कोर्स</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span id="teachersLink">शिक्षक</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span id="contactLink">संपर्क करें</span></a>
+      </nav>
+   </div>
+
+   <section class="playlist-details">
+      <h1 class="heading" id="playlistDetails">प्लेलिस्ट विवरण</h1>
+
+      <div class="row">
+         <div class="column">
+            <form action="" method="post" class="save-playlist">
+               <button type="submit"><i class="far fa-bookmark"></i> <span id="savePlaylist">प्लेलिस्ट सहेजें</span></button>
+            </form>
+
+            <div class="thumb">
+               <img src="images/thumb-1.png" alt="प्लेलिस्ट थंबनेल">
+               <span id="playlistThumbnail">10 वीडियो</span>
+            </div>
+         </div>
+
+         <div class="column">
+            <div class="tutor">
+               <img src="images/pic-2.jpg" alt="शिक्षक">
+               <div>
+                  <h3 id="tutorName">जॉन डियो</h3>
+                  <span id="tutorDate">21-10-2022</span>
+               </div>
+            </div>
+
+            <div class="details">
+               <h3 id="courseTitle">पूर्ण एचटीएमएल ट्यूटोरियल</h3>
+               <p id="courseDescription">लोरम इप्सम डोलर सिट अमेट, कॉनसेक्टेटर अदिपिसिसिंग एलीट।</p>
+               <a href="teacher_profile.html" class="inline-btn" id="watchProfile">प्रोफ़ाइल देखें</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="playlist-videos">
+      <h1 class="heading" id="playlistVideos">प्लेलिस्ट वीडियो</h1>
+
+      <div class="box-container">
+         <a class="box" href="watch-video-hi.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-1.png" alt="">
+            <h3 id="videoPart1">पूर्ण एचटीएमएल ट्यूटोरियल (भाग 01)</h3>
+         </a>
+
+         <a class="box" href="watch-video.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-2.png" alt="">
+            <h3 id="videoPart2">पूर्ण एचटीएमएल ट्यूटोरियल (भाग 02)</h3>
+         </a>
+
+         <a class="box" href="watch-video.html">
+            <i class="fas fa-play"></i>
+            <img src="images/post-1-3.png" alt="">
+            <h3 id="videoPart3">पूर्ण एचटीएमएल ट्यूटोरियल (भाग 03)</h3>
+         </a>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <span id="footerText">&copy; कॉपीराइट @ 2024 द्वारा <span>स्किलपीक</span> | सर्वाधिकार सुरक्षित!</span>
+   </footer>
+
+   <!-- Custom JS -->
+   <script src="js/script.js"></script>
+
+   <script type="module">
+      const translations = {
+         hi: {
+            logo: "स्किलपीक",
+            searchPlaceholder: "कोर्स खोजें...",
+            userName: "उपयोगकर्ता",
+            role: "छात्र",
+            viewProfile: "प्रोफ़ाइल देखें",
+            logout: "लॉगआउट",
+            playlistDetails: "प्लेलिस्ट विवरण",
+            savePlaylist: "प्लेलिस्ट सहेजें",
+            playlistThumbnail: "10 वीडियो",
+            tutorName: "जॉन डियो",
+            date: "21-10-2022",
+            courseTitle: "पूर्ण एचटीएमएल ट्यूटोरियल",
+            courseDescription: "लोरम इप्सम डोलर सिट अमेट, कॉनसेक्टेटर अदिपिसिसिंग एलीट।",
+            watchProfile: "प्रोफ़ाइल देखें",
+            playlistVideos: "प्लेलिस्ट वीडियो",
+            videoPart: "पूर्ण एचटीएमएल ट्यूटोरियल (भाग ",
+            footer: "&copy; कॉपीराइट @ 2024 द्वारा स्किलपीक | सर्वाधिकार सुरक्षित!"
+         },
+         // Other languages to be added here...
+      };
+
+      const userLang = localStorage.getItem('language') || 'hi';
+      document.getElementById('logo').textContent = translations[userLang].logo;
+      document.getElementById('searchPlaceholder').placeholder = translations[userLang].searchPlaceholder;
+      document.getElementById('header-user-name').textContent = translations[userLang].userName;
+      document.getElementById('userRole').textContent = translations[userLang].role;
+      document.getElementById('viewProfile').textContent = translations[userLang].viewProfile;
+      document.getElementById('logout').textContent = translations[userLang].logout;
+      document.getElementById('playlistDetails').textContent = translations[userLang].playlistDetails;
+      document.getElementById('savePlaylist').textContent = translations[userLang].savePlaylist;
+      document.getElementById('playlistThumbnail').textContent = translations[userLang].playlistThumbnail;
+      document.getElementById('tutorName').textContent = translations[userLang].tutorName;
+      document.getElementById('tutorDate').textContent = translations[userLang].date;
+      document.getElementById('courseTitle').textContent = translations[userLang].courseTitle;
+      document.getElementById('courseDescription').textContent = translations[userLang].courseDescription;
+      document.getElementById('watchProfile').textContent = translations[userLang].watchProfile;
+      document.getElementById('playlistVideos').textContent = translations[userLang].playlistVideos;
+      document.getElementById('footerText').innerHTML = translations[userLang].footer;
+
+      // Updating video titles
+      for (let i = 1; i <= 3; i++) {
+         document.querySelector(`#videoPart${i}`).textContent = translations[userLang].videoPart + i + ")";
+      }
+   </script>
+
+<script type="module">
+   // Update name in profile sections
+   document.addEventListener('DOMContentLoaded', function() {
+     const userName = localStorage.getItem('username') || "User";
+     document.getElementById('header-user-name').textContent = userName;
+     document.getElementById('sidebar-user-name').textContent = userName;
+     document.getElementById('user-name').textContent = userName;
+   });
+ </script>
+</body>
+</html>

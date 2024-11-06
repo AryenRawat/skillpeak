@@ -1,273 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Video</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="css/style.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <header class="header">
-    <section class="flex">
-        <a href="home.html" class="logo" id="logo">SkillPeak</a>
+   
+   <section class="flex">
 
-        <form action="search.html" method="post" class="search-form">
-            <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100" id="searchPlaceholder">
-            <button type="submit" class="fas fa-search"></button>
-        </form>
+      <a href="home.html" class="logo">SkillPeak</a>
 
-        <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="toggle-btn" class="fas fa-sun"></div>
-            <select id="language-selector" disabled onchange="changeLanguage(this.value)">
-                <option value="en">English</option>
-                <option value="hi">Hindi</option>
-                <option value="es">Spanish</option>
-                <option value="de">German</option>
-                <option value="fr">French</option>
-            </select>
-        </div>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
 
-        <div class="profile">
-            <img src="images/pic-1.jpg" class="image" alt="">
-            <h3 id="header-user-name" class="name">User</h3> <!-- Username will be dynamically added here -->
-            <p class="role" id="userRole">student</p>
-            <a href="profile.html" class="btn" id="viewProfile">View Profile</a>
-            <div class="flex-btn">
-                <a href="logout.html" class="option-btn" id="logout">Logout</a>
-            </div>
-        </div>
-    </section>
-</header>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Arnav Saharan</h3>
+         <p class="role">studen</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="logout.html" class="option-btn">logout</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
 
 <div class="side-bar">
-    <div id="close-btn">
-        <i class="fas fa-times"></i>
-    </div>
 
-    <div class="profile">
-        <img src="images/pic-1.jpg" class="image" alt="">
-        <h3 id="sidebar-user-name" class="name">User</h3> <!-- Username will be dynamically added here -->
-        <p class="role" id="sidebar-role">student</p>
-        <a href="profile.html" class="btn">View Profile</a>
-    </div>
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
 
-    <nav class="navbar">
-        <a href="home.html"><i class="fas fa-home"></i><span id="home">Home</span></a>
-        <a href="about.html"><i class="fas fa-question"></i><span id="about">About</span></a>
-        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span id="courses">Courses</span></a>
-        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span id="teachers">Teachers</span></a>
-        <a href="contact.html"><i class="fas fa-headset"></i><span id="contact">Contact Us</span></a>
-    </nav>
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Arnav Saharan</h3>
+      <p class="role">studen</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
 </div>
 
 <section class="watch-video">
-    <div class="video-container">
-        <div class="video">
-            <video src="videos/clip-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
-        </div>
-        <h3 class="title" id="videoTitle">Complete HTML Tutorial (Part 01)</h3>
-        <div class="info">
-            <p class="date"><i class="fas fa-calendar"></i><span id="tutorDate">22-10-2022</span></p>
-            <p class="date"><i class="fas fa-heart"></i><span id="likes">44 likes</span></p>
-        </div>
-        <div class="tutor">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="C:\Users\arpit\Desktop\skillpeak_ini\skillpeak\desgin\images\output_video.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/pic-2.jpg" alt="">
+         <div>
+            <h3>john deo</h3>
+            <span>developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+         <button><i class="far fa-heart"></i><span>like</span></button>
+      </form>
+      <p class="description">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure autem non fugit sint. A, sequi rerum architecto dolor fugiat illo, iure velit nihil laboriosam cupiditate voluptatum facere cumque nemo!
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>shaikh anas</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">this is a comment form shaikh anas</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
             <img src="images/pic-2.jpg" alt="">
             <div>
-                <h3 id="tutorName">John Doe</h3>
-                <span id="tutorRole">Developer</span>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
             </div>
-        </div>
-        <form action="" method="post" class="flex">
-            <a href="playlist.html" class="inline-btn" id="viewPlaylist">View Playlist</a>
-            <button><i class="far fa-heart"></i><span id="like">Like</span></button>
-        </form>
-        <p class="description" id="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.
-        </p>
-    </div>
+         </div>
+         <div class="comment-box">awesome tutorial!
+            keep going!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">amazing way of teaching!
+            thank you so much!
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">loved it, thanks for the tutorial!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
 </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <footer class="footer">
-    <span id="footerText">&copy; 2024 by <span>SkillPeak</span> | All Rights Reserved!</span>
+
+   &copy; copyright @ 2024 by <span>SkillPeak</span> | all rights reserved!
+
 </footer>
 
-<!-- Custom JS File -->
+<!-- custom js file link  -->
 <script src="js/script.js"></script>
-
-
-
-<script type="module">
-    const translations = {
-        en: {
-            logo: "SkillPeak",
-            userName: "User",
-            role: "student",
-            viewProfile: "View Profile",
-            logout: "Logout",
-            videoTitle: "Complete HTML Tutorial (Part 01)",
-            date: "22-10-2022",
-            likes: "44 likes",
-            tutorName: "John Doe",
-            tutorRole: "Developer",
-            viewPlaylist: "View Playlist",
-            like: "Like",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.",
-            footer: "&copy; 2024 by SkillPeak | All Rights Reserved!"
-        },
-        hi: {
-       logo: "स्किलपीक",
-       userName: "उपयोगकर्ता",
-       role: "छात्र",
-       viewProfile: "प्रोफ़ाइल देखें",
-       logout: "लॉगआउट",
-       videoTitle: "पूर्ण HTML ट्यूटोरियल (भाग 01)",
-       date: "22-10-2022",
-       likes: "44 लाइक",
-       tutorName: "जॉन डो",
-       tutorRole: "डेवलपर",
-       viewPlaylist: "प्लेलिस्ट देखें",
-       like: "लाइक",
-       description: "लोरम इप्सम डोलर सिट अमेट कॉनसेक्टेटर अदिपिसिसिंग एलीट। इटाके लेबोरे रेशन, हिक एक्सरसाइजमेन्ट मोलिटिया ओबकैटैटी कूलपा डोलर प्लेसट प्रॉविडेंट पोरो।",
-       footer: "&copy; 2024 द्वारा स्किलपीक | सर्वाधिकार सुरक्षित!"
-   },
-        es: {
-            logo: "SkillPeak",
-            userName: "Usuario",
-            role: "estudiante",
-            viewProfile: "Ver Perfil",
-            logout: "Cerrar Sesión",
-            videoTitle: "Tutorial Completo de HTML (Parte 01)",
-            date: "22-10-2022",
-            likes: "44 me gusta",
-            tutorName: "Juan Doe",
-            tutorRole: "Desarrollador",
-            viewPlaylist: "Ver Lista de Reproducción",
-            like: "Me Gusta",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.",
-            footer: "&copy; 2024 por SkillPeak | Todos los derechos reservados!"
-        },
-        de: {
-            logo: "SkillPeak",
-            userName: "Benutzer",
-            role: "Student",
-            viewProfile: "Profil Ansehen",
-            logout: "Abmelden",
-            videoTitle: "Komplettes HTML-Tutorial (Teil 01)",
-            date: "22-10-2022",
-            likes: "44 Gefällt mir",
-            tutorName: "Johann Doe",
-            tutorRole: "Entwickler",
-            viewPlaylist: "Wiedergabeliste Ansehen",
-            like: "Gefällt mir",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.",
-            footer: "&copy; 2024 von SkillPeak | Alle Rechte vorbehalten!"
-        },
-        fr: {
-            logo: "SkillPeak",
-            userName: "Utilisateur",
-            role: "étudiant",
-            viewProfile: "Voir le Profil",
-            logout: "Se Déconnecter",
-            videoTitle: "Tutoriel Complet HTML (Partie 01)",
-            date: "22-10-2022",
-            likes: "44 j'aime",
-            tutorName: "Jean Doe",
-            tutorRole: "Développeur",
-            viewPlaylist: "Voir la Liste de Lecture",
-            like: "J'aime",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.",
-            footer: "&copy; 2024 par SkillPeak | Tous droits réservés!"
-        }
-    };
-
-    // Function to change language
-    function changeLanguage(lang) {
-        const translation = translations[lang];
-        if (translation) {
-            document.getElementById('logo').textContent = translation.logo;
-            document.getElementById('header-user-name').textContent = translation.userName;
-            document.getElementById('userRole').textContent = translation.role;
-            document.getElementById('viewProfile').textContent = translation.viewProfile;
-            document.getElementById('logout').textContent = translation.logout;
-            document.getElementById('videoTitle').textContent = translation.videoTitle;
-            document.getElementById('tutorDate').textContent = translation.date;
-            document.getElementById('likes').textContent = translation.likes;
-            document.getElementById('tutorName').textContent = translation.tutorName;
-            document.getElementById('tutorRole').textContent = translation.tutorRole;
-            document.getElementById('viewPlaylist').textContent = translation.viewPlaylist;
-            document.getElementById('like').textContent = translation.like;
-            document.getElementById('description').textContent = translation.description;
-            document.getElementById('footerText').innerHTML = translation.footer;
-
-            // Save the selected language to localStorage
-            localStorage.setItem('language', lang);
-        }
-    }
-
-    // Fetch the saved language or default to English
-    const userLang = localStorage.getItem('language') || 'en';
-    console.log("lang:",userLang);
-    document.getElementById('language-selector').value = userLang; // Set the dropdown to the saved language
-    changeLanguage(userLang);
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Fetch username from localStorage and display it in multiple sections
-        const userName = localStorage.getItem('username') || "User";
-        document.getElementById('header-user-name').textContent = userName;
-        document.getElementById('sidebar-user-name').textContent = userName;
-    });
    
-   
-
-</script>
-
-<style>
-   .mini-tab {
-       display: none;
-       position: fixed;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       width: 80%;
-       height: 80%;
-       background-color: rgba(0, 0, 0, 0.8);
-       z-index: 1000;
-   }
-   
-   .mini-tab-content {
-       position: relative;
-       padding: 20px;
-       background: #fff;
-       height: 100%;
-       width: 100%;
-   }
-   
-   .mini-tab video {
-       width: 100%;
-       height: 80%;
-   }
-   
-   .mini-tab .close {
-       position: absolute;
-       top: 10px;
-       right: 20px;
-       color: #000;
-       font-size: 28px;
-       cursor: pointer;
-   }
-   </style>
-
 </body>
 </html>
